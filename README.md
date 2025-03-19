@@ -12,7 +12,7 @@ This project is a web-based assembler for the SimpleRISC architecture. It provid
 
 ## Live Demo
 You can access the SimpleRISC Assembler online at:
-[SimpleRISC Assembler](https://smitbhatt79.github.io/SimpleRISC_Assembler/)
+[SimpleRISC Assembler](https://martinjenny123.github.io/Simple_Risc__Assembler/)
 
 ## File Structure
 - `index.html` - Main HTML structure of the assembler.
@@ -20,7 +20,7 @@ You can access the SimpleRISC Assembler online at:
 - `assembler.js` - Core logic for parsing and assembling SimpleRISC code.
 
 ## Usage
-1. Open the website: [SimpleRISC Assembler](https://smitbhatt79.github.io/SimpleRISC_Assembler/)
+1. Open the website: [SimpleRISC Assembler](https://martinjenny123.github.io/Simple_Risc__Assembler/)
 2. Enter assembly code in the text area.
 3. Click **Assemble Code** to convert it into binary and hexadecimal.
 4. Download the HEX file for further use.

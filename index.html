@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleRISC Assembler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SimpleRISC Assembler</h1>
+      <div class="editor-container">
+        <div class="editor-panel">
+          <h2>Assembly Code</h2>
+          <textarea
+            id="assemblyInput"
+            placeholder="Enter your assembly code here...&#10;e.g. mov r1,r2"
+          ></textarea>
+          <div class="button-group">
+            <button id="loadExampleBtn">Load Example</button>
+            <button id="loadFileBtn">Load File</button>
+            <input type="file" id="fileInput" style="display: none" />
+          </div>
+        </div>
+        <div class="editor-panel">
+          <h2>Machine Code</h2>
+          <div class="output-tabs">
+            <button class="tab-btn active" data-tab="binaryOutput">
+              Binary
+            </button>
+            <button class="tab-btn" data-tab="hexOutput">Hex</button>
+          </div>
+          <div id="binaryOutput" class="output-content active">
+            <pre id="binaryResult"></pre>
+          </div>
+          <div id="hexOutput" class="output-content">
+            <pre id="hexResult"></pre>
+          </div>
+          <div class="button-group">
+            <button id="assembleBtn">Assemble Code</button>
+            <button id="downloadHexBtn">Download HEX</button>
+          </div>
+        </div>
+      </div>
+      <div class="error-panel">
+        <h2>Messages</h2>
+        <div id="errorMessages"></div>
+      </div>
+      <div class="info-panel">
+        <h2>Instructions & Reference</h2>
+        <div class="info-content">
+          <details>
+            <summary>Opcodes Reference</summary>
+            <table id="opcodeTable" class="reference-table"></table>
+          </details>
+          <details>
+            <summary>Registers Reference</summary>
+            <table id="registerTable" class="reference-table"></table>
+          </details>
+          <details>
+            <summary>Instruction Types</summary>
+            <table id="instructionTypeTable" class="reference-table"></table>
+          </details>
+        </div>
+      </div>
+    </div>
+    <script src="assembler.js"></script>
+  </body>
+</html>
